@@ -1,4 +1,4 @@
-package com.example.drawerfragment;
+package com.example.drawerfragment.Fragment;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -11,16 +11,18 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
+import com.example.drawerfragment.R;
 
-public class MainFragment extends Fragment {
+
+public class HomeFragment extends Fragment {
     private onFragmentBtnSelected listener;
 
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view=inflater.inflate(R.layout.fragment_main, container, false);
-        Button clickMe=view.findViewById(R.id.btnLoadSecondFragment);
+        View view=inflater.inflate(R.layout.fragment_home, container, false);
+        Button clickMe=view.findViewById(R.id.btnHomeGoToProfile);
         clickMe.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.ProfileFragment"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:padding="10dp"
+        android:text="@string/profile"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:id="@+id/txtProfileFragment"/>
+    <Button
+        android:id="@+id/btnProfileGoToHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/go_to_home"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_below="@id/txtProfileFragment"
+        android:layout_centerInParent="true"/>
+
+    <Button
+        android:id="@+id/btnProfileGoToHistory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/go_to_history"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_below="@id/btnProfileGoToHome"
+        android:layout_centerInParent="true"/>
+
+    <Button
+        android:id="@+id/btnProfileGoToAbout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/go_to_about"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_below="@id/btnProfileGoToHistory"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>
